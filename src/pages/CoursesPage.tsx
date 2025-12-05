@@ -1,6 +1,6 @@
 import { Star, Clock, Users, Eye, ShoppingCart } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { useScrollAnimation } from "@/hooks/useScrollANimation";
+import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { useNavigate } from "react-router-dom";
 
 const allCourses = [

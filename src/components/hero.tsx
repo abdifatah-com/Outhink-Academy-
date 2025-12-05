@@ -1,6 +1,6 @@
 import { ArrowRight, Play, LogIn } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { useScrollAnimation } from "@/hooks/useScrollANimation";
+import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { useNavigate } from "react-router-dom";
 
 export const Hero = () => {
@@ -26,10 +26,10 @@ export const Hero = () => {
       <div className="absolute top-20 left-10 w-72 h-72 bg-purple-200 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-float"></div>
       <div className="absolute top-40 right-10 w-72 h-72 bg-yellow-200 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-float animation-delay-300"></div>
       <div className="absolute -bottom-8 left-20 w-72 h-72 bg-pink-200 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-float animation-delay-600"></div>
-      
+
       {/* Login Button - Top Right */}
       <div className="absolute top-8 right-8 z-20">
-        <Button 
+        <Button
           onClick={handleLogin}
           variant="outline"
           size="sm"
@@ -42,14 +42,13 @@ export const Hero = () => {
 
       {/* Main Content */}
       <div ref={heroRef} className="container mx-auto px-6 text-center relative z-10">
-        <div className={`transition-all duration-1000 ease-out ${
-          heroVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
-        }`}>
+        <div className={`transition-all duration-1000 ease-out ${heroVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
+          }`}>
           {/* Logo */}
           <div className="mb-8 flex justify-center">
-            <img 
-              src=" src/Logo.png" 
-              alt="Outthink Academy" 
+            <img
+              src=" src/Logo.png"
+              alt="Outthink Academy"
               className="h-16 w-auto transition-transform duration-700 hover:scale-110"
             />
           </div>
@@ -75,18 +74,18 @@ export const Hero = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-            <Button 
-              size="lg" 
+            <Button
+              size="lg"
               onClick={handleGetStarted}
               className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white px-8 py-4 text-lg rounded-full transition-all duration-300 hover:scale-105 hover:shadow-2xl group"
             >
               Get Started
               <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Button>
-            
-            <Button 
-              variant="outline" 
-              size="lg" 
+
+            <Button
+              variant="outline"
+              size="lg"
               onClick={handleWatchDemo}
               className="border-gray-300 text-gray-700 hover:bg-gray-50 px-8 py-4 text-lg rounded-full transition-all duration-300 hover:scale-105 group"
             >
